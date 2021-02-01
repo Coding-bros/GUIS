@@ -7,7 +7,7 @@ For this modle to work, you need to install few dependencies:
 
 This module is called GUIS which means GUI Simplified / Graphial User Interface Simplified.
 
-This module helps you in making your Tkinter GUI, Fast and Easy,
+This module helps you in making your Tkinter GUI, Fast and Easy, and our module doesn't need .pack at the end :O
 
 People involved:
     Karthik: bkp.karthi@gmail.com
@@ -47,9 +47,10 @@ def makeLabel(text, bg, fg):
     """This Function Adds A Label on Your Window,
     For this function to work, you have to do the following:
 
-    guis.label("text", "bg", "fg", "size", "family")
+    guis.label("text", "bg", "fg")
     
-    eg: guis.label("Test", "red", "orange", "13", "Calibri")"""
+    eg: guis.label("Test", "red", "orange")
+    """
     
     Label(window, text=text, bg=bg, fg=fg).pack()
 def mainloop():
