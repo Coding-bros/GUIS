@@ -134,15 +134,52 @@ def windowName(name):
 
 # ------------------------------------------------->
 def makeLabel(text = "Label", bg = "white", fg = "black"):
-    """This Function Adds A Label on Your Window,
+    """
+    This Function Adds A Label on Your Window,
     For this function to work, you have to do the following:
 
-    guis.label("text", "bg", "fg")
+    guis.makeLabel("text", "bg", "fg")
     
-    eg: guis.label("Test", "red", "orange")
+    eg: guis.makeLabel("Test", "red", "orange")
     """
-    Label(window, text=text, bg=bg, fg=fg).pack()
+    Label(window, text = text, bg = bg, fg = fg).pack()
 
+def makeText(text = "Label", bg = "white", fg = "black"):
+    """
+    This Function Adds A Label on Your Window,
+    For this function to work, you have to do the following:
+
+    guis.makeLabel("text", "bg", "fg")
+    
+    eg: guis.makeLabel("Test", "red", "orange")
+
+    Incase you keep it as:
+
+    guis.makeLabel()
+
+    You will get the text as "Label", the bg / background color as white, and the fg / foreground / font color as white
+    """
+    Label(window, text = text, bg = bg, fg = fg).pack()
+
+# ------------------------------------------------>
+
+def makeButton(text = "Button", bg = "grey", fg = "black"):
+    """
+    This Function Adds A button on Your Window,
+    For this function to work, you have to do the following:
+
+    guis.makeButton("text", "bg", "fg")
+
+    eg: guis.makeButton("Click Me", "black", "white")
+
+    Incase you keep it as:
+
+    guis.makeButton()
+
+    you will get the text as "Button", the bg / background color as grey, and the fg / foreground / text color as black
+    """
+    Button(text = text, bg = bg, fg = fg).pack()
+# ------------------------------------------------>
 
 def mainloop():
     """

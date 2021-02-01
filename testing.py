@@ -1,9 +1,9 @@
 import guis
 
-guis.makeWindow()
-
-guis.windowColor("orange")
+guis.makeWindow("Testing", "200x200", "Orange")
 
 guis.makeLabel()
+
+guis.makeButton()
 
 guis.mainloop()
