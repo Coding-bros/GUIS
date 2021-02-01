@@ -1,4 +1,4 @@
 import guis
-
-guis.makeWindow("Testing", "500x300", "orange")
+guis.makeWindow("myWindow", "500x500", "red")
+guis.makeLabel("Test", "red", "orange")
 guis.mainloop()

@@ -43,7 +43,15 @@ def makeWindow(name, geometry, color):
     # Setting the color of the window
     window.config(bg = color)
 
+def makeLabel(text, bg, fg):
+    """This Function Adds A Label on Your Window,
+    For this function to work, you have to do the following:
 
+    guis.label("text", "bg", "fg", "size", "family")
+    
+    eg: guis.label("Test", "red", "orange", "13", "Calibri")"""
+    
+    Label(window, text=text, bg=bg, fg=fg).pack()
 def mainloop():
     """
     This function will mainloop the code so that your code will work.
