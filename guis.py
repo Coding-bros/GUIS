@@ -14,7 +14,7 @@ People involved:
     Jaideep: jaideep1163@gmail.com
     Eshan Sistla: greatesh2006@gmail.com
 
-Made on:
+Started on:
     1st February, 2021
 """
 
