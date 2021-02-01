@@ -11,7 +11,9 @@ This module helps you in making your Tkinter GUI, Fast and Easy, and our module 
 
 People involved:
     Karthik: bkp.karthi@gmail.com
+
     Jaideep: jaideep1163@gmail.com
+
     Eshan Sistla: greatesh2006@gmail.com
 
 Started on:
@@ -21,7 +23,7 @@ Started on:
 #Importing Tkinter
 from tkinter import *
 
-def makeWindow(name, geometry, color):
+def makeWindow(name = "Tk", geometry = "200x200", color = "white"):
     global window
     """
     This Function makes a window for you,
@@ -30,6 +32,12 @@ def makeWindow(name, geometry, color):
     guis.makeWindow("name", "geometry", "color")
 
     eg: guis.makeWindow("Test", "500x300", "orange")
+
+    incase you give:
+
+    guis.makeWindow()
+    
+    you get the window in 200x200, name as Tk, and color in white.
     """
     # Coniguring Tk() to window
     window = Tk()
@@ -43,7 +51,89 @@ def makeWindow(name, geometry, color):
     # Setting the color of the window
     window.config(bg = color)
 
-def makeLabel(text, bg, fg):
+# ------------------------------------------------->
+
+def windowColor(color):
+    """
+    This function lets you change just the background-color of your window
+
+    how to use:
+    
+    guis.windowColor("color")
+
+    eg: guis.windowColor("orange")
+    """
+    window.config(bg = color)
+
+
+def windowBg(bg):
+    """
+    This function lets you change just the background-color of your window
+
+    how to use:
+    
+    guis.windowBg("color")
+
+    eg: guis.windowBg("orange")
+    """
+    window.config(bg = bg)
+
+# ------------------------------------------------->
+
+def windowSize(size):
+    """
+    This function lets you change just the geometry / size of your window
+
+    how to use:
+    
+    guis.windowSize("geometry / size")
+
+    eg: guis.windowSize("500x300")
+    """
+    window.geometry(size)
+
+
+def windowGeometry(geometry):
+    """
+    This function lets you change just the geometry / size of your window
+
+    how to use:
+    
+    guis.windowGeometry("geometry / size")
+
+    eg: guis.windowGeometry"500x300")
+    """
+    window.geometry(geometry)
+
+# ------------------------------------------------->
+
+def windowTitle(title):
+    """
+    This function lets you change just the Title of your window
+
+    how to use:
+
+    guis.windowTitle("title")
+
+    eg: guis.windowTitle("test")
+    """
+    window.title(title)
+
+
+def windowName(name):
+    """
+    This function lets you change just the Title of your window
+
+    how to use:
+
+    guis.windowName("title")
+
+    eg: guis.windowName("test")
+    """
+    window.title(Name)
+
+# ------------------------------------------------->
+def makeLabel(text = "Label", bg = "white", fg = "black"):
     """This Function Adds A Label on Your Window,
     For this function to work, you have to do the following:
 
@@ -51,8 +141,9 @@ def makeLabel(text, bg, fg):
     
     eg: guis.label("Test", "red", "orange")
     """
-    
     Label(window, text=text, bg=bg, fg=fg).pack()
+
+
 def mainloop():
     """
     This function will mainloop the code so that your code will work.
