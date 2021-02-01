@@ -7,7 +7,7 @@ For this modle to work, you need to install few dependencies:
 
 This module is called GUIS which means GUI Simplified / Graphial User Interface Simplified.
 
-This module helps you in making your Tkinter GUI, Fast and Easy,
+This module helps you in making your Tkinter GUI, Fast and Easy, and This Module Doesn't need .pack() at the end :O
 
 People involved:
     Karthik: bkp.karthi@gmail.com
