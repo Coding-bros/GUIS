@@ -1,5 +1,7 @@
-# Importing our OP module
 import guis
 
-guis.makeWindow("Testing", "500x300", "orange")
+guis.makeWindow("myWindow", "500x500", "orange")
+
+guis.makeLabel("Test", "black", "white")
+
 guis.mainloop()
