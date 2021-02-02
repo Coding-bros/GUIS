@@ -18,6 +18,7 @@ People involved:
 
 Started on:
     1st February, 2021
+    0.0.1
 """
 
 #Importing Tkinter
