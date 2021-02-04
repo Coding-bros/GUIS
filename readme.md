@@ -14,7 +14,9 @@ from tkinter import *
 window = Tk()
 
 window.title("My Window")
+
 window.geometry("500x500")
+
 window.config("red")
 
 window.mainloop()
