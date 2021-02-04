@@ -18,7 +18,6 @@ People involved:
 
 Started on:
     1st February, 2021
-    0.0.1
 """
 
 #Importing Tkinter
@@ -182,6 +181,28 @@ def makeButton(text = "Button", bg = "grey", fg = "black"):
     Button(text = text, bg = bg, fg = fg).pack()
 # ------------------------------------------------>
 
+def insertBlank(bg = "white", times = 1):
+    """
+    This Function Adds A blank space in your Window,
+    This helps in moving your items away from each other.
+
+    For this function to work, you have to do the following:
+
+    guis.insertBlank("background color", "how many blanks")
+
+    eg: guis.insertBlank("orange", 3)
+
+    Incase you kept it as:
+
+    guis.insertBlank()
+
+    you will get, 1 white blank space.
+    """
+
+    for i in range(times):
+        Label(text = " ", bg = bg).pack()
+
+# ------------------------------------------------>
 def mainloop():
     """
     This function will mainloop the code so that your code will work.
