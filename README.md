@@ -60,7 +60,7 @@ window.mainloop()
 ```
 
 ## **If any problems, Feel Free to Contact Us:**
-> ## karthik: bkp.karthi@gmail.com
-> ## jaideep: jaideep1163@gmail.com
+> ## Karthik: bkp.karthi@gmail.com
+> ## Jaideep: jaideep1163@gmail.com
 
 # ----------Thank You--------
