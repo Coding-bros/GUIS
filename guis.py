@@ -18,11 +18,11 @@ People involved:
 
 Started on:
     1st February, 2021
-    0.0.1
 """
 
 #Importing Tkinter
 from tkinter import *
+
 
 def makeWindow(name = "Tk", geometry = "200x200", color = "white"):
     global window
@@ -164,7 +164,7 @@ def makeText(text = "Label", bg = "white", fg = "black"):
 
 # ------------------------------------------------>
 
-def makeButton(text = "Button", bg = "grey", fg = "black"):
+def makeButton(text = "Button", bg = "grey", fg = "black", command = default):
     """
     This Function Adds A button on Your Window,
     For this function to work, you have to do the following:
@@ -179,7 +179,29 @@ def makeButton(text = "Button", bg = "grey", fg = "black"):
 
     you will get the text as "Button", the bg / background color as grey, and the fg / foreground / text color as black
     """
-    Button(text = text, bg = bg, fg = fg).pack()
+    Button(text = text, bg = bg, fg = fg, command = command).pack()
+# ------------------------------------------------>
+
+def insertBlank(bg = "white", times = 1):
+    """
+    This Function Adds A blank space in your Window,
+    This helps in moving your items away from each other.
+
+    For this function to work, you have to do the following:
+
+    guis.insertBlank("background color", "how many blanks")
+
+    eg: guis.insertBlank("orange", 3)
+
+    Incase you kept it as:
+
+    guis.insertBlank()
+
+    you will get, 1 white blank space.
+    """
+
+    for i in range(times):
+        Label(text = " ", bg = bg).pack()
 # ------------------------------------------------>
 
 def mainloop():
