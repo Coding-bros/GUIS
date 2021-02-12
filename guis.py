@@ -25,9 +25,12 @@ from tkinter import *
 
 
 def makeWindow(name = "Tk", geometry = "200x200", color = "white"):
-    global window
     """
-    This Function makes a window for you,
+\033[1;36;1mThese are all the commands,
+
+\033[1;33;1mmakeWindow()
+
+    \033[1;32;1mThis Function makes a window for you,
     For this function to work, you have to do the following:
 
     guis.makeWindow("name", "geometry", "color")
@@ -56,7 +59,9 @@ def makeWindow(name = "Tk", geometry = "200x200", color = "white"):
 
 def windowColor(color):
     """
-    This function lets you change just the background-color of your window
+\033[1;33;1mwindowColor()
+
+    \033[1;32;1mThis function lets you change just the background-color of your window
 
     how to use:
     
@@ -69,6 +74,8 @@ def windowColor(color):
 
 def windowBg(bg):
     """
+\033[1;33;1mwindowBg()
+
     This function lets you change just the background-color of your window
 
     how to use:
@@ -83,7 +90,9 @@ def windowBg(bg):
 
 def windowSize(size):
     """
-    This function lets you change just the geometry / size of your window
+\033[1;33;1mwindowSize() / windowGeometry()
+
+    \033[1;32;1mThis function lets you change just the geometry / size of your window
 
     how to use:
     
@@ -96,6 +105,8 @@ def windowSize(size):
 
 def windowGeometry(geometry):
     """
+\033[1;33;1mwindowGeometry() / windowSize()
+
     This function lets you change just the geometry / size of your window
 
     how to use:
@@ -110,7 +121,9 @@ def windowGeometry(geometry):
 
 def windowTitle(title):
     """
-    This function lets you change just the Title of your window
+\033[1;33;1mwindowTitle() / windowName()
+
+    \033[1;32;1mThis function lets you change just the Title of your window
 
     how to use:
 
@@ -123,6 +136,8 @@ def windowTitle(title):
 
 def windowName(name):
     """
+\033[1;33;1mwindowName() / windowTitle()
+
     This function lets you change just the Title of your window
 
     how to use:
@@ -136,7 +151,9 @@ def windowName(name):
 # ------------------------------------------------->
 def makeLabel(text = "Label", bg = "white", fg = "black"):
     """
-    This Function Adds A Label on Your Window,
+\033[1;33;1mmakeLabel() / makeText()
+
+    \033[1;32;1mThis Function Adds A Label on Your Window,
     For this function to work, you have to do the following:
 
     guis.makeLabel("text", "bg", "fg")
@@ -147,6 +164,8 @@ def makeLabel(text = "Label", bg = "white", fg = "black"):
 
 def makeText(text = "Label", bg = "white", fg = "black"):
     """
+\033[1;33;1mmakeText() / makeLabel()
+
     This Function Adds A Label on Your Window,
     For this function to work, you have to do the following:
 
@@ -164,9 +183,11 @@ def makeText(text = "Label", bg = "white", fg = "black"):
 
 # ------------------------------------------------>
 
-def makeButton(text = "Button", bg = "grey", fg = "black", command = default):
+def makeButton(text = "Button", bg = "grey", fg = "black"):
     """
-    This Function Adds A button on Your Window,
+\033[1;33;1mmakeButton()
+
+    \033[1;32;1mThis Function Adds A button on Your Window,
     For this function to work, you have to do the following:
 
     guis.makeButton("text", "bg", "fg")
@@ -179,12 +200,14 @@ def makeButton(text = "Button", bg = "grey", fg = "black", command = default):
 
     you will get the text as "Button", the bg / background color as grey, and the fg / foreground / text color as black
     """
-    Button(text = text, bg = bg, fg = fg, command = command).pack()
+    Button(text = text, bg = bg, fg = fg).pack()
 # ------------------------------------------------>
 
 def insertBlank(bg = "white", times = 1):
     """
-    This Function Adds A blank space in your Window,
+\033[1;33;1minsertBlank()
+
+    \033[1;32;1mThis Function Adds A blank space in your Window,
     This helps in moving your items away from each other.
 
     For this function to work, you have to do the following:
@@ -206,9 +229,30 @@ def insertBlank(bg = "white", times = 1):
 
 def mainloop():
     """
-    This function will mainloop the code so that your code will work.
+\033[1;33;1mmainloop()
+
+    \033[1;32;1mThis function will mainloop the code so that your code will work.
     For this function to work, you have to keep this function at the end of the code.
 
     guis.mainloop()
     """
     window.mainloop()
+
+# ------------------------------------------------>
+
+def commands():
+    print(makeWindow.__doc__)
+    print(" ")
+    print(makeButton.__doc__)
+    print(" ")
+    print(makeLabel.__doc__)
+    print(" ")
+    print(windowColor.__doc__)
+    print(" ")
+    print(windowSize.__doc__)
+    print(" ")
+    print(windowTitle.__doc__)
+    print(" ")
+    print(insertBlank.__doc__)
+    print(" ")
+    print(mainloop.__doc__)
