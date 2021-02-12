@@ -23,6 +23,7 @@ Started on:
 #Importing Tkinter
 from tkinter import *
 
+
 def makeWindow(name = "Tk", geometry = "200x200", color = "white"):
     global window
     """
@@ -163,7 +164,7 @@ def makeText(text = "Label", bg = "white", fg = "black"):
 
 # ------------------------------------------------>
 
-def makeButton(text = "Button", bg = "grey", fg = "black"):
+def makeButton(text = "Button", bg = "grey", fg = "black", command = default):
     """
     This Function Adds A button on Your Window,
     For this function to work, you have to do the following:
@@ -178,7 +179,7 @@ def makeButton(text = "Button", bg = "grey", fg = "black"):
 
     you will get the text as "Button", the bg / background color as grey, and the fg / foreground / text color as black
     """
-    Button(text = text, bg = bg, fg = fg).pack()
+    Button(text = text, bg = bg, fg = fg, command = command).pack()
 # ------------------------------------------------>
 
 def insertBlank(bg = "white", times = 1):
@@ -201,8 +202,8 @@ def insertBlank(bg = "white", times = 1):
 
     for i in range(times):
         Label(text = " ", bg = bg).pack()
-
 # ------------------------------------------------>
+
 def mainloop():
     """
     This function will mainloop the code so that your code will work.
