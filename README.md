@@ -5,9 +5,6 @@
 
 ### This is a module based on Tkinter, This helps you make you Tkinter code **Fast, Easy**, and our **Module doesn't need .pack() for Labels, Buttons, etc...**
 #
-## **You can also get this module from github:**
- ## www.github.com/Coding-bros/GUIS
- #
 
 ## **Installation**
 
